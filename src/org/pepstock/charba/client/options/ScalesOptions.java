@@ -33,7 +33,7 @@ import org.pepstock.charba.client.enums.Display;
  * @author Andrea "Stock" Stocchero
  *
  */
-public final class Scales extends AbstractModel<Options, IsDefaultScales> implements IsDefaultScales {
+public final class ScalesOptions extends AbstractModel<Options, IsDefaultScales> implements IsDefaultScales {
 
 	/**
 	 * Default name of X axis is <b>{@value DEFAULT_X_AXIS_ID}</b>.
@@ -92,7 +92,7 @@ public final class Scales extends AbstractModel<Options, IsDefaultScales> implem
 	 * 
 	 * @param defaultValues default values of scales
 	 */
-	public Scales(IsDefaultScales defaultValues) {
+	public ScalesOptions(IsDefaultScales defaultValues) {
 		this(null, null, defaultValues, null);
 	}
 
@@ -104,7 +104,7 @@ public final class Scales extends AbstractModel<Options, IsDefaultScales> implem
 	 * @param defaultValues default provider
 	 * @param nativeObject native object to map java script properties
 	 */
-	Scales(Options options, Key childKey, IsDefaultScales defaultValues, NativeObject nativeObject) {
+	ScalesOptions(Options options, Key childKey, IsDefaultScales defaultValues, NativeObject nativeObject) {
 		super(options, childKey, defaultValues, nativeObject);
 	}
 

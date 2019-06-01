@@ -43,7 +43,7 @@ public final class LegendClickEvent extends AbstractEvent<LegendClickEventHandle
 		super(nativeEvent);
 		// checks if argument is consistent
 		if (item == null) {
-			throw new IllegalArgumentException("Legend item is null");
+			throw new IllegalArgumentException("LegendOptions item is null");
 		}
 		this.item = item;
 	}

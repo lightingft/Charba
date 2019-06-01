@@ -49,7 +49,7 @@ final class NativePlugin {
 	}
 
 	/**
-	 * Plugins must define a unique id in order to be configurable.<br>
+	 * PluginsOptions must define a unique id in order to be configurable.<br>
 	 * Returns the plugin id. A plugin id <br>
 	 * <ul>
 	 * <li>can not start with a dot or an underscore
@@ -64,7 +64,7 @@ final class NativePlugin {
 	public native String getId();
 
 	/**
-	 * Plugins must define a unique id in order to be configurable.<br>
+	 * PluginsOptions must define a unique id in order to be configurable.<br>
 	 * Returns the plugin id. A plugin id <br>
 	 * <ul>
 	 * <li>can not start with a dot or an underscore

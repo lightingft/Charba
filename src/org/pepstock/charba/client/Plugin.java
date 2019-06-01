@@ -23,14 +23,14 @@ import org.pepstock.charba.client.items.TooltipPluginItem;
 /**
  * This interface is defining the extension hook for Chart.JS plugin implementation (both for <i>inline</i> and <i>global</i>
  * plugins).<br>
- * Plugins are the most efficient way to customize or change the default behavior of a chart.
+ * PluginsOptions are the most efficient way to customize or change the default behavior of a chart.
  * 
  * @author Andrea "Stock" Stocchero
  */
 public interface Plugin {
 
 	/**
-	 * Plugins must define a unique id in order to be configurable.<br>
+	 * PluginsOptions must define a unique id in order to be configurable.<br>
 	 * Returns the plugin id. A plugin id <br>
 	 * <ul>
 	 * <li>can not start with a dot or an underscore

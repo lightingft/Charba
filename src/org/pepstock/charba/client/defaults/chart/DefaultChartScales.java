@@ -19,40 +19,40 @@ import org.pepstock.charba.client.defaults.IsDefaultScale;
 import org.pepstock.charba.client.defaults.IsDefaultScales;
 import org.pepstock.charba.client.defaults.globals.DefaultsBuilder;
 import org.pepstock.charba.client.enums.Display;
-import org.pepstock.charba.client.options.Scales;
+import org.pepstock.charba.client.options.ScalesOptions;
 
 /**
- * Defaults for scales/axes option element, based on chart type.
+ * Defaults for scalesOptions/axes option element, based on chart type.
  * 
  * @author Andrea "Stock" Stocchero
  */
 public final class DefaultChartScales implements IsDefaultScales {
 
-	private final Scales scales;
+	private final ScalesOptions scalesOptions;
 
 	private final IsDefaultScale xAxis;
 
 	private final IsDefaultScale yAxis;
 
 	/**
-	 * Creates the object by scales option element instance.
+	 * Creates the object by scalesOptions option element instance.
 	 * 
-	 * @param scales scales option element instance.
+	 * @param scalesOptions scalesOptions option element instance.
 	 */
-	public DefaultChartScales(Scales scales) {
-		this.scales = scales;
+	public DefaultChartScales(ScalesOptions scalesOptions) {
+		this.scalesOptions = scalesOptions;
 		// checks if there is any x axes
-		if (!scales.getXAxes().isEmpty()) {
+		if (!scalesOptions.getXAxes().isEmpty()) {
 			// uses the first one as default
-			xAxis = scales.getXAxes().get(0);
+			xAxis = scalesOptions.getXAxes().get(0);
 		} else {
 			// uses the default
 			xAxis = DefaultsBuilder.get().getScaledOptions().getScale();
 		}
 		// checks if there is any y axes
-		if (!scales.getYAxes().isEmpty()) {
+		if (!scalesOptions.getYAxes().isEmpty()) {
 			// uses the first one as default
-			yAxis = scales.getYAxes().get(0);
+			yAxis = scalesOptions.getYAxes().get(0);
 		} else {
 			// uses the default
 			yAxis = DefaultsBuilder.get().getScaledOptions().getScale();
@@ -66,7 +66,7 @@ public final class DefaultChartScales implements IsDefaultScales {
 	 */
 	@Override
 	public Display getDisplay() {
-		return scales.getDisplay();
+		return scalesOptions.getDisplay();
 	}
 
 	/*

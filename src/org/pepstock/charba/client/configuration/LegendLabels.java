@@ -66,7 +66,7 @@ public class LegendLabels extends ConfigurationContainer<ExtendedOptions> {
 	}
 
 	/**
-	 * Java script FUNCTION callback called to filter legend items out of the legend. Receives 1 parameter, a Legend Item.<br>
+	 * Java script FUNCTION callback called to filter legend items out of the legend. Receives 1 parameter, a LegendOptions Item.<br>
 	 * Must be an interface with only 1 method.
 	 * 
 	 * @author Andrea "Stock" Stocchero
@@ -75,7 +75,7 @@ public class LegendLabels extends ConfigurationContainer<ExtendedOptions> {
 	interface ProxyFilterCallback {
 
 		/**
-		 * Method of function to be called to filter legend items out of the legend. Receives 1 parameter, a Legend Item.
+		 * Method of function to be called to filter legend items out of the legend. Receives 1 parameter, a LegendOptions Item.
 		 * 
 		 * @param context context Value of <code>this</code> to the execution context of function.
 		 * @param item legend item to check.

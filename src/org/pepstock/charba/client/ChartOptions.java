@@ -19,7 +19,7 @@ import org.pepstock.charba.client.commons.NativeObject;
 import org.pepstock.charba.client.defaults.globals.DefaultsBuilder;
 import org.pepstock.charba.client.options.Scale;
 import org.pepstock.charba.client.options.ScaledOptions;
-import org.pepstock.charba.client.options.Scales;
+import org.pepstock.charba.client.options.ScalesOptions;
 
 /**
  * This object is mapping the default options related to the chart type.
@@ -66,7 +66,7 @@ public final class ChartOptions extends ScaledOptions {
 	 * @see org.pepstock.charba.client.options.ScaledOptions#getScales()
 	 */
 	@Override
-	public Scales getScales() {
+	public ScalesOptions getScales() {
 		// checks if the chart is multi-scales
 		if (ScaleType.MULTI.equals(type.scaleType())) {
 			// returns the scales

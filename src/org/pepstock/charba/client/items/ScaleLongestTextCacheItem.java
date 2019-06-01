@@ -28,7 +28,7 @@ import org.pepstock.charba.client.commons.NativeObjectContainer;
 import org.pepstock.charba.client.commons.ObjectType;
 
 /**
- * Legend internal object to get data about ticks and their length in pixels.<br>
+ * LegendOptions internal object to get data about ticks and their length in pixels.<br>
  * This is a wrapper of scale text item of Chart (of CHART.JS).
  * 
  * @author Andrea "Stock" Stocchero

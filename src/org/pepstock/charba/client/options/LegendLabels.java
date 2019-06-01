@@ -24,7 +24,7 @@ import org.pepstock.charba.client.defaults.IsDefaultLegendLabels;
  * 
  * @author Andrea "Stock" Stocchero
  */
-public final class LegendLabels extends AbstractModel<Legend, IsDefaultLegendLabels> implements IsDefaultLegendLabels, HasFont {
+public final class LegendLabels extends AbstractModel<LegendOptions, IsDefaultLegendLabels> implements IsDefaultLegendLabels, HasFont {
 
 	/**
 	 * Name of properties of native object.
@@ -66,13 +66,13 @@ public final class LegendLabels extends AbstractModel<Legend, IsDefaultLegendLab
 	 * Creates the object with the parent, the key of this element, default values and native object to map java script
 	 * properties.
 	 * 
-	 * @param legend legend of the chart.
+	 * @param legendOptions legendOptions of the chart.
 	 * @param childKey the property name of this element to use to add it to the parent.
 	 * @param defaultValues default provider
 	 * @param nativeObject native object to map java script properties
 	 */
-	LegendLabels(Legend legend, Key childKey, IsDefaultLegendLabels defaultValues, NativeObject nativeObject) {
-		super(legend, childKey, defaultValues, nativeObject);
+	LegendLabels(LegendOptions legendOptions, Key childKey, IsDefaultLegendLabels defaultValues, NativeObject nativeObject) {
+		super(legendOptions, childKey, defaultValues, nativeObject);
 		this.fonter = new Fonter(getNativeObject(), this, getDefaultValues());
 	}
 

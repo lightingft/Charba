@@ -32,7 +32,7 @@ public final class Elements extends AbstractModel<Options, IsDefaultElements> im
 
 	private final Line line;
 
-	private final Point point;
+	private final PointOptions pointOptions;
 
 	private final Rectangle rectangle;
 
@@ -41,7 +41,7 @@ public final class Elements extends AbstractModel<Options, IsDefaultElements> im
 	 */
 	private enum Property implements Key
 	{
-		POINT("point"),
+		POINT("pointOptions"),
 		LINE("line"),
 		RECTANGLE("rectangle"),
 		ARC("arc");
@@ -84,7 +84,7 @@ public final class Elements extends AbstractModel<Options, IsDefaultElements> im
 		// gets all sub elements
 		arc = new Arc(this, Property.ARC, defaultValues.getArc(), getValue(Property.ARC));
 		line = new Line(this, Property.LINE, defaultValues.getLine(), getValue(Property.LINE));
-		point = new Point(this, Property.POINT, defaultValues.getPoint(), getValue(Property.POINT));
+		pointOptions = new PointOptions(this, Property.POINT, defaultValues.getPoint(), getValue(Property.POINT));
 		rectangle = new Rectangle(this, Property.RECTANGLE, defaultValues.getRectangle(), getValue(Property.RECTANGLE));
 	}
 
@@ -107,12 +107,12 @@ public final class Elements extends AbstractModel<Options, IsDefaultElements> im
 	}
 
 	/**
-	 * Returns the point element.
+	 * Returns the pointOptions element.
 	 * 
-	 * @return the point
+	 * @return the pointOptions
 	 */
-	public Point getPoint() {
-		return point;
+	public PointOptions getPoint() {
+		return pointOptions;
 	}
 
 	/**

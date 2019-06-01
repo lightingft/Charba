@@ -18,7 +18,7 @@ package org.pepstock.charba.client.callbacks;
 import org.pepstock.charba.client.items.LegendItem;
 
 /**
- * Filters legend items out of the legend. Receives 2 parameters, a Legend Item and the chart.
+ * Filters legend items out of the legend. Receives 2 parameters, a LegendOptions Item and the chart.
  * 
  * @author Andrea "Stock" Stocchero
  */

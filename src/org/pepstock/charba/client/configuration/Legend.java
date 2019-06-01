@@ -266,7 +266,7 @@ public class Legend extends ConfigurationContainer<ExtendedOptions> implements I
 	/**
 	 * Returns if the legend will show datasets in reverse order.
 	 * 
-	 * @return Legend will show datasets in reverse order.
+	 * @return LegendOptions will show datasets in reverse order.
 	 */
 	public boolean isReverse() {
 		return getConfiguration().getLegend().isReverse();

@@ -23,7 +23,7 @@ import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.user.client.ui.Image;
 
 /**
- * Point elements are used to represent the points in a line chart or a bubble chart.
+ * PointOptions elements are used to represent the points in a line chart or a bubble chart.
  * 
  * @author Andrea "Stock" Stocchero
  */

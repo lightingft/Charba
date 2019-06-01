@@ -71,7 +71,7 @@ public final class TimeSeriesScales extends Scales {
 	/*
 	 * (non-Javadoc)
 	 * 
-	 * @see org.pepstock.charba.client.configuration.Scales#setXAxes(org.pepstock.charba.client.configuration. Axis[])
+	 * @see org.pepstock.charba.client.configuration.ScalesOptions#setXAxes(org.pepstock.charba.client.configuration. Axis[])
 	 */
 	@Override
 	public void setXAxes(Axis... axes) {

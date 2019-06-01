@@ -69,7 +69,7 @@ import jsinterop.annotations.JsFunction;
  * automatically based on the display size, making the rendering inaccurate.<br>
  * It provides a few options to enable responsiveness and control the resize behavior of charts by detecting when the canvas
  * display size changes and update the render size accordingly.<br>
- * <b> Legend </b><br>
+ * <b> LegendOptions </b><br>
  * Sometimes you need a very complex legend. In these cases, it makes sense to generate an HTML legend. Charts provide a
  * generateLegend() method on their prototype that returns an HTML string for the legend. To configure how this legend is
  * generated, you can set the legendCallback.<br>

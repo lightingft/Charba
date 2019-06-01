@@ -86,14 +86,14 @@ public final class ExtendedOptions extends ScaledOptions {
 	}
 
 	/**
-	 * Adds a event proxy function to legend element instance.
+	 * Adds a event proxy function to legendOptions element instance.
 	 * 
-	 * @param legend legend element instance
+	 * @param legendOptions legendOptions element instance
 	 * @param property property name.
 	 * @param proxy function proxy to activate.
 	 */
-	public void setEvent(Legend legend, Key property, CallbackProxy.Proxy proxy) {
-		setEventToModel(legend, property, proxy);
+	public void setEvent(LegendOptions legendOptions, Key property, CallbackProxy.Proxy proxy) {
+		setEventToModel(legendOptions, property, proxy);
 	}
 
 	/**

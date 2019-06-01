@@ -86,7 +86,7 @@ Showcase
 
 See [Charba showcase](http://www.pepstock.org/Charba-Showcase/Charba_Showcase.html) to have a look what you can do with it.
 
-See also [Charba showcase source code](https://github.com/pepstock-org/Charba-Showcase) on GitHub as starting point.
+See also [Charba showcase source code](https://github.com/pepstock-org/Charba-Showcase) on GitHub as starting pointOptions.
 
 The samples are going to reflect what CHART.JS samples are showing [here](http://www.chartjs.org/samples/latest/).
 

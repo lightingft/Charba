@@ -17,24 +17,24 @@ package org.pepstock.charba.client.defaults.chart;
 
 import org.pepstock.charba.client.defaults.IsDefaultPoint;
 import org.pepstock.charba.client.enums.PointStyle;
-import org.pepstock.charba.client.options.Point;
+import org.pepstock.charba.client.options.PointOptions;
 
 /**
- * Defaults for point option element, based on chart type.
+ * Defaults for pointOptions option element, based on chart type.
  * 
  * @author Andrea "Stock" Stocchero
  */
 public final class DefaultChartPoint implements IsDefaultPoint {
 
-	private final Point point;
+	private final PointOptions pointOptions;
 
 	/**
-	 * Creates the object by point option element instance.
+	 * Creates the object by pointOptions option element instance.
 	 * 
-	 * @param point point option element instance.
+	 * @param pointOptions pointOptions option element instance.
 	 */
-	DefaultChartPoint(Point point) {
-		this.point = point;
+	DefaultChartPoint(PointOptions pointOptions) {
+		this.pointOptions = pointOptions;
 	}
 
 	/*
@@ -44,7 +44,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public String getBackgroundColorAsString() {
-		return point.getBackgroundColorAsString();
+		return pointOptions.getBackgroundColorAsString();
 	}
 
 	/*
@@ -54,7 +54,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public int getBorderWidth() {
-		return point.getBorderWidth();
+		return pointOptions.getBorderWidth();
 	}
 
 	/*
@@ -64,7 +64,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public String getBorderColorAsString() {
-		return point.getBorderColorAsString();
+		return pointOptions.getBorderColorAsString();
 	}
 
 	/*
@@ -74,7 +74,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public double getRadius() {
-		return point.getRadius();
+		return pointOptions.getRadius();
 	}
 
 	/*
@@ -84,7 +84,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public PointStyle getPointStyle() {
-		return point.getPointStyle();
+		return pointOptions.getPointStyle();
 	}
 
 	/*
@@ -94,7 +94,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public double getHitRadius() {
-		return point.getHitRadius();
+		return pointOptions.getHitRadius();
 	}
 
 	/*
@@ -104,7 +104,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public double getHoverRadius() {
-		return point.getHoverRadius();
+		return pointOptions.getHoverRadius();
 	}
 
 	/*
@@ -114,7 +114,7 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public int getHoverBorderWidth() {
-		return point.getHoverBorderWidth();
+		return pointOptions.getHoverBorderWidth();
 	}
 
 	/*
@@ -124,6 +124,6 @@ public final class DefaultChartPoint implements IsDefaultPoint {
 	 */
 	@Override
 	public double getRotation() {
-		return point.getRotation();
+		return pointOptions.getRotation();
 	}
 }

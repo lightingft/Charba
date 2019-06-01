@@ -26,7 +26,7 @@ import org.pepstock.charba.client.enums.Position;
  * @author Andrea "Stock" Stocchero
  *
  */
-public final class Legend extends AbstractModel<Options, IsDefaultLegend> implements IsDefaultLegend {
+public final class LegendOptions extends AbstractModel<Options, IsDefaultLegend> implements IsDefaultLegend {
 
 	private LegendLabels labels;
 
@@ -74,7 +74,7 @@ public final class Legend extends AbstractModel<Options, IsDefaultLegend> implem
 	 * @param defaultValues default provider
 	 * @param nativeObject native object to map java script properties
 	 */
-	Legend(Options options, Key childKey, IsDefaultLegend defaultValues, NativeObject nativeObject) {
+	LegendOptions(Options options, Key childKey, IsDefaultLegend defaultValues, NativeObject nativeObject) {
 		super(options, childKey, defaultValues, nativeObject);
 		// gets sub element
 		labels = new LegendLabels(this, Property.LABELS, getDefaultValues().getLabels(), getValue(Property.LABELS));

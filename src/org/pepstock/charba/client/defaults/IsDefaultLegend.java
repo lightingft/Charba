@@ -48,7 +48,7 @@ public interface IsDefaultLegend {
 	/**
 	 * Returns if the legend will show datasets in reverse order.
 	 * 
-	 * @return Legend will show datasets in reverse order.
+	 * @return LegendOptions will show datasets in reverse order.
 	 */
 	boolean isReverse();
 

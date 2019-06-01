@@ -25,7 +25,7 @@ import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.commons.ObjectType;
 import org.pepstock.charba.client.defaults.IsDefaultOptions;
 import org.pepstock.charba.client.enums.BorderSkipped;
-import org.pepstock.charba.client.options.Scales;
+import org.pepstock.charba.client.options.ScalesOptions;
 import org.pepstock.charba.client.utils.Utilities;
 
 /**
@@ -132,7 +132,7 @@ public class BarDataset extends HovingFlexDataset implements HasDataPoints {
 	 *         axis.
 	 */
 	public String getXAxisID() {
-		return getValue(Property.X_AXIS_ID, Scales.DEFAULT_X_AXIS_ID);
+		return getValue(Property.X_AXIS_ID, ScalesOptions.DEFAULT_X_AXIS_ID);
 	}
 
 	/**
@@ -153,7 +153,7 @@ public class BarDataset extends HovingFlexDataset implements HasDataPoints {
 	 *         axis.
 	 */
 	public String getYAxisID() {
-		return getValue(Property.Y_AXIS_ID, Scales.DEFAULT_Y_AXIS_ID);
+		return getValue(Property.Y_AXIS_ID, ScalesOptions.DEFAULT_Y_AXIS_ID);
 	}
 
 	/**

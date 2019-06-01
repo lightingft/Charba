@@ -18,28 +18,28 @@ package org.pepstock.charba.client.defaults.chart;
 import org.pepstock.charba.client.defaults.IsDefaultLegend;
 import org.pepstock.charba.client.defaults.IsDefaultLegendLabels;
 import org.pepstock.charba.client.enums.Position;
-import org.pepstock.charba.client.options.Legend;
+import org.pepstock.charba.client.options.LegendOptions;
 
 /**
- * Defaults for legend option element, based on chart type.
+ * Defaults for legendOptions option element, based on chart type.
  * 
  * @author Andrea "Stock" Stocchero
  */
 public final class DefaultChartLegend implements IsDefaultLegend {
 
-	private final Legend legend;
+	private final LegendOptions legendOptions;
 
 	private final DefaultChartLegendLabels labels;
 
 	/**
-	 * Creates the object by legend option element instance.
+	 * Creates the object by legendOptions option element instance.
 	 * 
-	 * @param legend legend option element instance.
+	 * @param legendOptions legendOptions option element instance.
 	 */
-	DefaultChartLegend(Legend legend) {
-		this.legend = legend;
+	DefaultChartLegend(LegendOptions legendOptions) {
+		this.legendOptions = legendOptions;
 		// creates sub element
-		labels = new DefaultChartLegendLabels(legend.getLabels());
+		labels = new DefaultChartLegendLabels(legendOptions.getLabels());
 	}
 
 	/*
@@ -59,7 +59,7 @@ public final class DefaultChartLegend implements IsDefaultLegend {
 	 */
 	@Override
 	public boolean isDisplay() {
-		return legend.isDisplay();
+		return legendOptions.isDisplay();
 	}
 
 	/*
@@ -69,7 +69,7 @@ public final class DefaultChartLegend implements IsDefaultLegend {
 	 */
 	@Override
 	public boolean isFullWidth() {
-		return legend.isFullWidth();
+		return legendOptions.isFullWidth();
 	}
 
 	/*
@@ -79,7 +79,7 @@ public final class DefaultChartLegend implements IsDefaultLegend {
 	 */
 	@Override
 	public boolean isReverse() {
-		return legend.isReverse();
+		return legendOptions.isReverse();
 	}
 
 	/*
@@ -89,7 +89,7 @@ public final class DefaultChartLegend implements IsDefaultLegend {
 	 */
 	@Override
 	public Position getPosition() {
-		return legend.getPosition();
+		return legendOptions.getPosition();
 	}
 
 }

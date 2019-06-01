@@ -27,7 +27,7 @@ import org.pepstock.charba.client.defaults.IsDefaultOptions;
 import org.pepstock.charba.client.enums.CubicInterpolationMode;
 import org.pepstock.charba.client.enums.DataType;
 import org.pepstock.charba.client.enums.SteppedLine;
-import org.pepstock.charba.client.options.Scales;
+import org.pepstock.charba.client.options.ScalesOptions;
 
 /**
  * The line chart allows a number of properties to be specified for each dataset. These are used to set display properties for a
@@ -105,10 +105,10 @@ public class LineDataset extends LiningDataset implements HasDataPoints {
 	 * Returns the ID of the x axis to plot this dataset on.
 	 * 
 	 * @return the ID of the x axis to plot this dataset on. Default is
-	 *         {@link org.pepstock.charba.client.options.Scales#DEFAULT_X_AXIS_ID}
+	 *         {@link ScalesOptions#DEFAULT_X_AXIS_ID}
 	 */
 	public String getXAxisID() {
-		return getValue(Property.X_AXIS_ID, Scales.DEFAULT_X_AXIS_ID);
+		return getValue(Property.X_AXIS_ID, ScalesOptions.DEFAULT_X_AXIS_ID);
 	}
 
 	/**
@@ -124,10 +124,10 @@ public class LineDataset extends LiningDataset implements HasDataPoints {
 	 * Returns the ID of the y axis to plot this dataset on.
 	 * 
 	 * @return the ID of the y axis to plot this dataset on. Default is
-	 *         {@link org.pepstock.charba.client.options.Scales#DEFAULT_Y_AXIS_ID}
+	 *         {@link ScalesOptions#DEFAULT_Y_AXIS_ID}
 	 */
 	public String getYAxisID() {
-		return getValue(Property.Y_AXIS_ID, Scales.DEFAULT_Y_AXIS_ID);
+		return getValue(Property.Y_AXIS_ID, ScalesOptions.DEFAULT_Y_AXIS_ID);
 	}
 
 	/**

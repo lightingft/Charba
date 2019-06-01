@@ -20,13 +20,13 @@ import org.pepstock.charba.client.commons.NativeObject;
 import org.pepstock.charba.client.defaults.IsDefaultScaledOptions;
 
 /**
- * Base object which maps chart options, with scales elements to set axes configurations.
+ * Base object which maps chart options, with scalesOptions elements to set axes configurations.
  * 
  * @author Andrea "Stock" Stocchero
  */
 public class ScaledOptions extends Options implements IsDefaultScaledOptions {
 
-	private final Scales scales;
+	private final ScalesOptions scalesOptions;
 
 	private Scale scale;
 
@@ -35,7 +35,7 @@ public class ScaledOptions extends Options implements IsDefaultScaledOptions {
 	 */
 	private enum Property implements Key
 	{
-		SCALES("scales"),
+		SCALES("scalesOptions"),
 		SCALE("scale");
 
 		// name value of property
@@ -80,9 +80,9 @@ public class ScaledOptions extends Options implements IsDefaultScaledOptions {
 	 */
 	protected ScaledOptions(IsDefaultScaledOptions defaultValues, NativeObject nativeObject) {
 		super(defaultValues, nativeObject);
-		// gets scales sub elements
+		// gets scalesOptions sub elements
 		scale = new Scale(this, Property.SCALE, defaultValues.getScale(), getValue(Property.SCALE));
-		scales = new Scales(this, Property.SCALES, defaultValues.getScales(), getValue(Property.SCALES));
+		scalesOptions = new ScalesOptions(this, Property.SCALES, defaultValues.getScales(), getValue(Property.SCALES));
 	}
 
 	/**
@@ -113,8 +113,8 @@ public class ScaledOptions extends Options implements IsDefaultScaledOptions {
 	 * @see org.pepstock.charba.client.defaults.IsDefaultScaledOptions#getScales()
 	 */
 	@Override
-	public Scales getScales() {
-		return scales;
+	public ScalesOptions getScales() {
+		return scalesOptions;
 	}
 
 }

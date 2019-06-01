@@ -37,7 +37,7 @@ import org.pepstock.charba.client.plugins.PluginIdChecker;
  * @author Andrea "Stock" Stocchero
  *
  */
-public final class Plugins extends AbstractModel<Options, NoDefaults> {
+public final class PluginsOptions extends AbstractModel<Options, NoDefaults> {
 
 	/**
 	 * Creates the object with the parent, the key of this element and native object to map java script properties.<br>
@@ -47,7 +47,7 @@ public final class Plugins extends AbstractModel<Options, NoDefaults> {
 	 * @param childKey the property name of this element to use to add it to the parent.
 	 * @param nativeObject native object to map java script properties
 	 */
-	Plugins(Options options, Key childKey, NativeObject nativeObject) {
+	PluginsOptions(Options options, Key childKey, NativeObject nativeObject) {
 		// no default values for this element
 		super(options, childKey, NoDefaults.INSTANCE, nativeObject);
 	}

@@ -39,7 +39,7 @@ public class Options extends AbstractModel<Options, IsDefaultOptions> implements
 	// all sub elements
 	private final Animation animation;
 
-	private final Legend legend;
+	private final LegendOptions legendOptions;
 
 	private final Hover hover;
 
@@ -51,7 +51,7 @@ public class Options extends AbstractModel<Options, IsDefaultOptions> implements
 
 	private final Tooltips tooltips;
 
-	private final Plugins plugins;
+	private final PluginsOptions pluginsOptions;
 
 	/**
 	 * Name of properties of native object.
@@ -63,9 +63,9 @@ public class Options extends AbstractModel<Options, IsDefaultOptions> implements
 		LAYOUT("layout"),
 		ANIMATION("animation"),
 		TOOLTIPS("tooltips"),
-		LEGEND("legend"),
+		LEGEND("legendOptions"),
 		TITLE("title"),
-		PLUGINS("plugins"),
+		PLUGINS("pluginsOptions"),
 		RESPONSIVE("responsive"),
 		RESPONSIVE_ANIMATION_DURATION("responsiveAnimationDuration"),
 		MAINTAIN_ASPECT_RATIO("maintainAspectRatio"),
@@ -128,13 +128,13 @@ public class Options extends AbstractModel<Options, IsDefaultOptions> implements
 		super(defaultValues, nativeObject);
 		// gets all sub elements
 		animation = new Animation(this, Property.ANIMATION, getDefaultValues().getAnimation(), getValue(Property.ANIMATION));
-		legend = new Legend(this, Property.LEGEND, getDefaultValues().getLegend(), getValue(Property.LEGEND));
+		legendOptions = new LegendOptions(this, Property.LEGEND, getDefaultValues().getLegend(), getValue(Property.LEGEND));
 		elements = new Elements(this, Property.ELEMENTS, defaultValues.getElements(), getValue(Property.ELEMENTS));
 		hover = new Hover(this, Property.HOVER, getDefaultValues().getHover(), getValue(Property.HOVER));
 		layout = new Layout(this, Property.LAYOUT, defaultValues.getLayout(), getValue(Property.LAYOUT));
 		title = new Title(this, Property.TITLE, getDefaultValues().getTitle(), getValue(Property.TITLE));
 		tooltips = new Tooltips(this, Property.TOOLTIPS, getDefaultValues().getTooltips(), getValue(Property.TOOLTIPS));
-		plugins = new Plugins(this, Property.PLUGINS, getValue(Property.PLUGINS));
+		pluginsOptions = new PluginsOptions(this, Property.PLUGINS, getValue(Property.PLUGINS));
 	}
 
 	/**
@@ -147,12 +147,12 @@ public class Options extends AbstractModel<Options, IsDefaultOptions> implements
 	}
 
 	/**
-	 * Returns the legend element.
+	 * Returns the legendOptions element.
 	 * 
-	 * @return the legend
+	 * @return the legendOptions
 	 */
-	public Legend getLegend() {
-		return legend;
+	public LegendOptions getLegend() {
+		return legendOptions;
 	}
 
 	/**
@@ -201,12 +201,12 @@ public class Options extends AbstractModel<Options, IsDefaultOptions> implements
 	}
 
 	/**
-	 * Returns the plugins element.
+	 * Returns the pluginsOptions element.
 	 * 
-	 * @return the plugins
+	 * @return the pluginsOptions
 	 */
-	public final Plugins getPlugins() {
-		return plugins;
+	public final PluginsOptions getPlugins() {
+		return pluginsOptions;
 	}
 
 	/**

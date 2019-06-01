@@ -26,7 +26,7 @@ import org.pepstock.charba.client.commons.Key;
 import org.pepstock.charba.client.commons.NativeObject;
 import org.pepstock.charba.client.commons.NativeObjectContainer;
 import org.pepstock.charba.client.items.DatasetItem.DatasetItemFactory;
-import org.pepstock.charba.client.options.Scales;
+import org.pepstock.charba.client.options.ScalesOptions;
 
 /**
  * Calling some methods on your chart instance passing an argument of an event, will return the elements at the event
@@ -131,19 +131,19 @@ public final class DatasetMetaItem extends NativeObjectContainer {
 	/**
 	 * Returns the Y axis ID.
 	 * 
-	 * @return the Y axis ID. Default is {@link org.pepstock.charba.client.options.Scales#DEFAULT_Y_AXIS_ID}.
+	 * @return the Y axis ID. Default is {@link ScalesOptions#DEFAULT_Y_AXIS_ID}.
 	 */
 	public String getYAxisID() {
-		return getValue(Property.Y_AXIS_ID, Scales.DEFAULT_Y_AXIS_ID);
+		return getValue(Property.Y_AXIS_ID, ScalesOptions.DEFAULT_Y_AXIS_ID);
 	}
 
 	/**
 	 * Returns the X axis ID.
 	 * 
-	 * @return the X axis ID. Default is {@link org.pepstock.charba.client.options.Scales#DEFAULT_X_AXIS_ID}.
+	 * @return the X axis ID. Default is {@link ScalesOptions#DEFAULT_X_AXIS_ID}.
 	 */
 	public String getXAxisID() {
-		return getValue(Property.X_AXIS_ID, Scales.DEFAULT_X_AXIS_ID);
+		return getValue(Property.X_AXIS_ID, ScalesOptions.DEFAULT_X_AXIS_ID);
 	}
 
 	/**

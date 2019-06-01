@@ -27,11 +27,11 @@ import com.google.gwt.resources.client.ImageResource;
 import com.google.gwt.user.client.ui.Image;
 
 /**
- * Point elements are used to represent the points in a line chart or a bubble chart.
+ * PointOptions elements are used to represent the points in a line chart or a bubble chart.
  * 
  * @author Andrea "Stock" Stocchero
  */
-public final class Point extends AbstractElement<IsDefaultPoint> implements IsDefaultPoint {
+public final class PointOptions extends AbstractElement<IsDefaultPoint> implements IsDefaultPoint {
 
 	/**
 	 * Name of properties of native object.
@@ -80,7 +80,7 @@ public final class Point extends AbstractElement<IsDefaultPoint> implements IsDe
 	 * @param defaultValues default provider
 	 * @param nativeObject native object to map java script properties
 	 */
-	Point(Elements elements, Key childKey, IsDefaultPoint defaultValues, NativeObject nativeObject) {
+	PointOptions(Elements elements, Key childKey, IsDefaultPoint defaultValues, NativeObject nativeObject) {
 		super(elements, childKey, defaultValues, nativeObject);
 	}
 
